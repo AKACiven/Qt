@@ -18,18 +18,18 @@ MainWindow::MainWindow(QWidget *parent) :
     startBtn->setFixedSize(50,30);
     startBtn->move(130,50);
 
-    // 创建第二个界面
+    // 创建第二个窗口
     second = new SecondWindow;
 
-    // 监听主界面的返回信号
+    // 监听第二个窗口的返回信号
     connect(second,&SecondWindow::back,[=](){
-        second->hide();     // 主界面隐藏
+        second->hide();     // 第二个窗口隐藏
         this->show();       // 自身显示
     });
 
     connect(startBtn,&QPushButton::clicked,[=](){
         this->hide();       // 将自身隐藏
-        second->show();     // 显示主界面
+        second->show();     // 显示第二个窗口
     });
 
     // 退出
