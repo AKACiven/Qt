@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/exitBtn.jpg</file>
+        <file>res/startBtn.jpg</file>
+    </qresource>
+</RCC>
