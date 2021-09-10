@@ -18,6 +18,9 @@ public:
 public slots:           // 槽函数
     void start();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
